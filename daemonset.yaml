@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: DaemonSet
 metadata:
-   name: nginx-deployment
+   name: nginx-ds
    labels:
       env: demo
 spec:
@@ -15,8 +15,7 @@ spec:
       - image: nginx
         name: nginx
         ports:
-        - containerPort: 80
-  replicas: 3
+        - containerPort: 80 
   selector:
     matchLabels:
       env: demo

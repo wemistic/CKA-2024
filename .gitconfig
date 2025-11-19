@@ -1,0 +1,5 @@
+[user]
+	email = wemistic@gmail.com
+	name = ubuntu-node1
+[credential]
+	helper = store
